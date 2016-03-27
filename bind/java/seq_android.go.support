@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package gomobile_bind
+package gojava_bind
 
 // Go support functions for bindings. This file is copied into the
 // generated gomobile_bind package and compiled along with the
