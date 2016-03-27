@@ -4,16 +4,16 @@
 
 package go;
 
-import android.test.InstrumentationTestCase;
-import android.test.MoreAsserts;
-
+import go.MoreAsserts;
 import java.util.Arrays;
 import java.util.Random;
 
 import go.testpkg.Testpkg;
 import go.secondpkg.Secondpkg;
 
-public class SeqTest extends InstrumentationTestCase {
+import static go.MoreAsserts.*;
+
+public class SeqTest {
   public SeqTest() {
   }
 
@@ -75,13 +75,13 @@ public class SeqTest extends InstrumentationTestCase {
     assertEquals("var InterfaceVar", obj.String(), Testpkg.getInterfaceVar().String());
   }
 
-  public void testAssets() {
-    // Make sure that a valid context is set before reading assets
-    Seq.setContext(getInstrumentation().getContext());
-    String want = "Hello, Assets.\n";
-    String got = Testpkg.ReadAsset();
-    assertEquals("Asset read", want, got);
-  }
+//  public void testAssets() {
+//    // Make sure that a valid context is set before reading assets
+//    Seq.setContext(getInstrumentation().getContext());
+//    String want = "Hello, Assets.\n";
+//    String got = Testpkg.ReadAsset();
+//    assertEquals("Asset read", want, got);
+//  }
 
   public void testAdd() {
     long res = Testpkg.Add(3, 4);

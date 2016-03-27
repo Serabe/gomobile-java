@@ -21,9 +21,9 @@ import (
 
 	"golang.org/x/mobile/asset"
 
-	"golang.org/x/mobile/bind/testpkg/secondpkg"
-	"golang.org/x/mobile/bind/testpkg/simplepkg"
-	"golang.org/x/mobile/bind/testpkg/unboundpkg"
+	"github.com/sridharv/gomobile-java/bind/testpkg/secondpkg"
+	"github.com/sridharv/gomobile-java/bind/testpkg/simplepkg"
+	"github.com/sridharv/gomobile-java/bind/testpkg/unboundpkg"
 )
 
 const (

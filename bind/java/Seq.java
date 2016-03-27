@@ -23,14 +23,14 @@ public class Seq {
 		// Its only purpose is to call System.loadLibrary.
 		try {
 			Class loadJNI = Class.forName("go.LoadJNI");
-			setContext(loadJNI.getDeclaredField("ctx").get(null));
+//			setContext(loadJNI.getDeclaredField("ctx").get(null));
 		} catch (ClassNotFoundException e) {
 			// Ignore, assume the user will load JNI for it.
 			log.warning("LoadJNI class not found");
-		} catch (NoSuchFieldException e) {
-			log.severe("LoadJNI class missing field: " + e);
-		} catch (IllegalAccessException e) {
-			log.severe("LoadJNI class bad field: " + e);
+//		} catch (NoSuchFieldException e) {
+//			log.severe("LoadJNI class missing field: " + e);
+//		} catch (IllegalAccessException e) {
+//			log.severe("LoadJNI class bad field: " + e);
 		}
 		init();
 	}
