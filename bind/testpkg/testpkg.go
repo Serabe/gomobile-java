@@ -19,7 +19,7 @@ import (
 	"runtime"
 	"time"
 
-	"golang.org/x/mobile/asset"
+	"github.com/sridharv/gomobile-java/asset"
 
 	"github.com/sridharv/gomobile-java/bind/testpkg/secondpkg"
 	"github.com/sridharv/gomobile-java/bind/testpkg/simplepkg"
